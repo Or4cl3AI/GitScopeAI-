@@ -1,4 +1,4 @@
-```javascript
+''`javascript
 // Importing necessary libraries and components
 import React from 'react';
 import renderer from 'react-test-renderer';

@@ -1,4 +1,4 @@
-```javascript
+''`javascript
 // Importing necessary libraries and components
 import React, { useState } from 'react';
 import { View, StyleSheet } from 'react-native';
