@@ -45,7 +45,20 @@ const VercelIntegration = () => {
       }
     } catch (error) {
       // If there's an error, show an error message
-      Alert.alert('Deployment Failed', 'There was an error deploying your project. Please try again.');
+      if (error.response) {
+        switch (error.response.status) {
+          case 401:
+            Alert.alert('Deployment Failed', 'Unauthorized error. Please check your Vercel token.');
+            break;
+          case 404:
+            Alert.alert('Deployment Failed', 'Not found error. Please check your project ID.');
+            break;
+          default:
+            Alert.alert('Deployment Failed', 'There was an error deploying your project. Please try again.');
+        }
+      } else {
+        Alert.alert('Deployment Failed', 'There was an error deploying your project. Please try again.');
+      }
     }
   };
 
