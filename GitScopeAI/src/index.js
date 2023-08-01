@@ -1,4 +1,3 @@
-```javascript
 // Importing necessary libraries and components
 import React from 'react';
 import { Provider } from 'react-redux';
@@ -34,4 +33,3 @@ const Main = () => {
 
 // Exporting the main component
 export default Main;
-```
