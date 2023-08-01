@@ -1,4 +1,3 @@
-```javascript
 // Importing required dependencies
 import React from 'react';
 import { render, fireEvent } from '@testing-library/react-native';
@@ -36,8 +35,7 @@ describe('Backend', () => {
     const button = getByTestId('backend-deploy-button');
     fireEvent.press(button);
     // Simulating an error during the deployment process
-    await new Promise((_, reject) => setTimeout(reject, 5000));
-    expect(getByTestId('backend-deployment-status')).toHaveTextContent('Deployment Failed');
+    await new Promise((_, reject) => setTimeout(() => reject('Error creating backend deployment folder'), 5000));
+    expect(console.error).toHaveBeenCalledWith('Error creating backend deployment folder');
   });
 });
-```
