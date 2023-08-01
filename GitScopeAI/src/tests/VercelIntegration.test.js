@@ -1,4 +1,3 @@
-```javascript
 // Importing required dependencies
 import React from 'react';
 import { render, fireEvent } from '@testing-library/react-native';
@@ -29,15 +28,24 @@ describe('VercelIntegration', () => {
     const { getByTestId } = render(<VercelIntegration />);
     const deployButton = getByTestId('deploy-button');
 
-    // Simulating a deployment failure
+    // Simulating an unauthorized error
     global.fetch = jest.fn(() =>
-      Promise.reject('Deployment failed')
+      Promise.reject({ response: { status: 401 } })
     );
 
     fireEvent.press(deployButton);
 
     // Assuming that the error message is displayed in a text component with testID 'error-message'
-    expect(getByTestId('error-message').props.children).toBe('Deployment failed');
+    expect(getByTestId('error-message').props.children).toBe('Unauthorized error. Please check your Vercel token.');
+
+    // Simulating a not found error
+    global.fetch = jest.fn(() =>
+      Promise.reject({ response: { status: 404 } })
+    );
+
+    fireEvent.press(deployButton);
+
+    // Assuming that the error message is displayed in a text component with testID 'error-message'
+    expect(getByTestId('error-message').props.children).toBe('Not found error. Please check your project ID.');
   });
 });
-```
