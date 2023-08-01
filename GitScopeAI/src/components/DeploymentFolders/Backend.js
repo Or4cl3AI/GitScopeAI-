@@ -1,4 +1,3 @@
-```javascript
 // Importing necessary libraries and modules
 import React from 'react';
 import { View, Text } from 'react-native';
@@ -15,7 +14,11 @@ const Backend = () => {
    * It uses the react-native-deployment-folders library to create the folder and add the files.
    */
   const createBackendFolder = () => {
-    // Code to create the backend deployment folder and add the necessary files and configurations
+    try {
+      // Code to create the backend deployment folder and add the necessary files and configurations
+    } catch (error) {
+      console.error('Error creating backend deployment folder:', error);
+    }
   };
 
   /**
@@ -24,7 +27,11 @@ const Backend = () => {
    * It uses the react-native-deployment-folders library to update the folder and the files.
    */
   const updateBackendFolder = () => {
-    // Code to update the backend deployment folder when there are changes in the backend code
+    try {
+      // Code to update the backend deployment folder when there are changes in the backend code
+    } catch (error) {
+      console.error('Error updating backend deployment folder:', error);
+    }
   };
 
   // Rendering the Backend component
@@ -37,4 +44,3 @@ const Backend = () => {
 
 // Exporting the Backend component
 export default Backend;
-```
