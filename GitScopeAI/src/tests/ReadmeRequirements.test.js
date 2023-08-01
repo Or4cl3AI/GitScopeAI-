@@ -1,4 +1,4 @@
-```javascript
+''`javascript
 import React from 'react';
 import { render, fireEvent } from '@testing-library/react-native';
 import ReadmeRequirements from '../components/ReadmeRequirements';

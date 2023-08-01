@@ -1,4 +1,4 @@
-```javascript
+''`javascript
 // Importing necessary libraries and modules
 import React from 'react';
 import { View, Text } from 'react-native';

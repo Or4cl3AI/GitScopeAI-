@@ -1,4 +1,4 @@
-```javascript
+''`javascript
 // Importing necessary libraries and components
 import React, { useState, useEffect } from 'react';
 import { GiftedChat } from 'react-native-gifted-chat';

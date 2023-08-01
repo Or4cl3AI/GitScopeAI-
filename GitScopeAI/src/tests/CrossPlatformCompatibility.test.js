@@ -1,4 +1,4 @@
-```javascript
+''`javascript
 import React from 'react';
 import renderer from 'react-test-renderer';
 import CrossPlatformCompatibility from '../components/CrossPlatformCompatibility';

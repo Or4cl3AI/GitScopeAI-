@@ -1,6 +1,6 @@
 // Importing necessary libraries and modules
-import React from 'react';
-import { View, Text } from 'react-native';
+import React from 'react'
+import { View, Text } from 'react-native'
 
 /**
  * Backend Deployment Folder Component
@@ -17,9 +17,9 @@ const Backend = () => {
     try {
       // Code to create the backend deployment folder and add the necessary files and configurations
     } catch (error) {
-      console.error('Error creating backend deployment folder:', error);
+      console.error('Error creating backend deployment folder:', error)
     }
-  };
+  }
 
   /**
    * updateBackendFolder function
@@ -30,17 +30,17 @@ const Backend = () => {
     try {
       // Code to update the backend deployment folder when there are changes in the backend code
     } catch (error) {
-      console.error('Error updating backend deployment folder:', error);
+      console.error('Error updating backend deployment folder:', error)
     }
-  };
+  }
 
   // Rendering the Backend component
   return (
     <View>
       <Text>Backend Deployment Folder</Text>
     </View>
-  );
-};
+  )
+}
 
 // Exporting the Backend component
-export default Backend;
+export default Backend
