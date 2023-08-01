@@ -26,7 +26,7 @@ const VercelIntegration = () => {
 
       // Make a POST request to Vercel's deployment API
       const response = await axios.post(
-        `https://api.vercel.com/v12/now/deployments`,
+        "https://api.vercel.com/v12/now/deployments",
         {
           name: 'GitScopeAI',
           projectId: projectId,
