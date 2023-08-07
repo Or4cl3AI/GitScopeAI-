@@ -14,8 +14,8 @@ const VercelIntegration = () => {
     const deploymentFolderPath = path.join(__dirname, 'Deployment')
     fs.mkdirSync(deploymentFolderPath)
 
-    // TODO: Copy necessary files to the deployment folder
-    // ...
+  // TODO: Copy necessary files to the deployment folder
+  // Add code to copy necessary files here
   }
 
   // Function to handle deployment to Vercel
