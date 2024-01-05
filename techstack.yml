@@ -1,7 +1,8 @@
 repo_name: Or4cl3AI/GitScopeAI-
 report_id: 54d2cef732c6a888ee957187c0aaa89d
+version: 0.1
 repo_type: Public
-timestamp: '2023-11-24T02:00:59+00:00'
+timestamp: '2024-01-05T08:34:35+00:00'
 requested_by: Or4cl3AI
 provider: github
 branch: main
@@ -16,6 +17,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/1209/javascript.jpeg
+  detection_source_url: https://github.com/Or4cl3AI/GitScopeAI-
   detection_source: Repo Metadata
 - name: Git
   description: Fast, scalable, distributed revision control system
@@ -25,6 +27,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Version Control System
   image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/Or4cl3AI/GitScopeAI-
   detection_source: Repo Metadata
 - name: GitHub Actions
   description: Automate your workflow from idea to production
@@ -34,6 +37,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Continuous Integration
   image_url: https://img.stackshare.io/service/11563/actions.png
+  detection_source_url: https://github.com/Or4cl3AI/GitScopeAI-/blob/main/.github/workflows/npm-grunt.yml
   detection_source: ".github/workflows/npm-grunt.yml"
   last_updated_by: Dustin Groves
   last_updated_on: 2023-08-01 01:46:16.000000000 Z
@@ -46,6 +50,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Text Editor
   image_url: https://img.stackshare.io/service/4202/Visual_Studio_Code_logo.png
+  detection_source_url: https://github.com/Or4cl3AI/GitScopeAI-/blob/main/.vscode/tasks.json
   detection_source: ".vscode/tasks.json"
   last_updated_by: Dustin Groves
   last_updated_on: 2023-08-01 05:03:15.000000000 Z
